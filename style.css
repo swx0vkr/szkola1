@@ -19,7 +19,7 @@ body {
     color: var(--text);
     line-height: 1.55;
     min-height: 100vh;
-    display: flex;
+    padding-bottom: 3.5rem;     display: flex;
     flex-direction: column;
 }
 
@@ -27,7 +27,6 @@ a { color: var(--accent); text-decoration: none; transition: color .2s ease; }
 a:hover { color: #fff; }
 img { max-width: 100%; display: block; }
 
-/* ---------- Pasek górny ---------- */
 .topbar { background: var(--top); border-bottom: 1px solid #000; }
 .topbar .inner {
     max-width: 1000px; margin: 0 auto; padding: 0 1rem;
@@ -99,7 +98,7 @@ form input, form textarea {
 form input:focus, form textarea:focus { outline: none; border-color: var(--accent); }
 form .btn { margin-top: 1.2rem; }
 
-footer { background: var(--top); color: var(--muted); text-align: center; padding: 1.2rem 1rem; font-size: .85rem; border-top: 1px solid #000; }
+footer { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--top); color: var(--muted); text-align: center; padding: 1.2rem 1rem; font-size: .85rem; border-top: 1px solid #000; }
 
 @media (max-width: 800px) {
     .featured { grid-template-columns: 1fr; }
